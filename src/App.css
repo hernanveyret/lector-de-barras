@@ -5,14 +5,10 @@
   text-align: center;
 }
 
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 form {
@@ -25,6 +21,7 @@ form {
   align-items: center;
   gap: 10px;
   padding: 10px;
+  background-color: #ffffff;
 }
 input {
   width: 80%;
@@ -34,7 +31,7 @@ input {
 }
 input:focus {
   outline: none;
-  border: 1px solid green;
+  border: 2px solid green;
 }
 button {
   width: 40%;
@@ -42,5 +39,25 @@ button {
   background-color: rgb(0, 238, 255);
   border: none;
   border-radius: 8px;
-  
+  transition: .3s ease-in-out;
+}
+button:hover {
+  background-color: rgb(0, 153, 255);
+}
+.card-productos {
+  box-shadow: 0 0 4px grey;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+.card-productos p {
+  border: thin solid grey;
+  width: 100%;
+  text-align: left;
 }
